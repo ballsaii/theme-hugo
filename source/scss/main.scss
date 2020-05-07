@@ -6,7 +6,12 @@
 /*
  * Globals
  */
-
+@import 'https://fonts.googleapis.com/css?family=Kanit|Prompt:300|Sarabun&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap';
+//-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$fontbasic: "Segoe UI","Helvetica Neue","Noto Sans",Arial,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+// add font thai
+// 'Kanit', Prompt', 'Sarabun' , sans-serif;
 @media (min-width: 48em) {
   html {
     font-size: 18px;
@@ -15,6 +20,9 @@
 
 body {
   color: #555;
+  background-color: #f7f1df;
+  font-family: $fontbasic,'Sarabun',sans-serif;
+  
 }
 
 h1, .h1,
@@ -25,9 +33,11 @@ h5, .h5,
 h6, .h6 {
   font-weight: normal;
   color: #333;
+  font-family: $fontbasic,'Prompt',serif;
   a, a:hover, a:focus {
-    color: inherit;
+    color: #073642 ;
     text-decoration: none;
+    
   }
 }
 
@@ -47,7 +57,7 @@ h6, .h6 {
 
 .blog-masthead {
   margin-bottom: 3rem;
-  background-color: #428bca;
+  background-color:#073642;//#002b36
   -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
           box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
 }
@@ -57,17 +67,17 @@ h6, .h6 {
   position: relative;
   padding: 1rem;
   font-weight: 500;
-  color: #cdddeb;
+  color: #839496;
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #fff;
+  color: #eee8d5;
   background-color: transparent;
 }
 
 /* Active state gets a caret at the bottom */
 .nav-link.active {
-  color: #fff;
+  color:  #dc322f;
 }
 .nav-link.active:after {
   position: absolute;
@@ -91,7 +101,7 @@ h6, .h6 {
 .blog-header {
   padding-bottom: 1.25rem;
   margin-bottom: 2rem;
-  border-bottom: .05rem solid #eee;
+  border-bottom: .05rem solid #e8e2cf;
 }
 .blog-title {
   margin-bottom: 0;
@@ -118,7 +128,27 @@ h6, .h6 {
 .sidebar-module {
   padding: 1rem;
   /*margin: 0 -1rem 1rem;*/
+  font-family: $fontbasic,'Prompt',sans-serif;
+  border-left-style: solid;
+  border-left-color: #dcd4c48a;
+  border-left-width: thin;
+  a, a:hover, a:focus {
+    color: #dc322f ;
+    //text-decoration: none;
+    font-size: 1rem;;
+  }
+  h4{
+    color: #073642 ;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
 }
+
+.list-unstyled{
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
 .sidebar-module-inset {
   padding: 1rem;
   background-color: #f5f5f5;
@@ -146,6 +176,7 @@ h6, .h6 {
 
 .blog-post {
   margin-bottom: 4rem;
+  font-size: medium;
 }
 .blog-post-title {
   margin-bottom: .25rem;
@@ -154,6 +185,9 @@ h6, .h6 {
 .blog-post-meta {
   margin-bottom: 1.25rem;
   color: #999;
+  a{
+    color: #2aa198;
+  }
 }
 article img {
   max-width: 100%;
@@ -190,8 +224,10 @@ article div.highlight {
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #073642;
+  font-size: smaller;
   border-top: .05rem solid #e5e5e5;
+  a{color: #728694;}
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
