@@ -33,7 +33,7 @@ h5, .h5,
 h6, .h6 {
   font-weight: normal;
   color: #333;
-  font-family: $fontbasic,'Prompt',serif;
+  font-family: $fontbasic,'Prompt:300',serif;
   a, a:hover, a:focus {
     color: #073642 ;
     text-decoration: none;
@@ -128,7 +128,7 @@ h6, .h6 {
 .sidebar-module {
   padding: 1rem;
   /*margin: 0 -1rem 1rem;*/
-  font-family: $fontbasic,'Prompt',sans-serif;
+  font-family: $fontbasic,'Prompt:300',sans-serif;
   border-left-style: solid;
   border-left-color: #dcd4c48a;
   border-left-width: thin;
