@@ -1,6 +1,9 @@
 node_modules
 exampleSite/themes
 yarn.lock
+<<<<<<< HEAD
 package-lock.json
 package.json
 assets/
+=======
+>>>>>>> master
