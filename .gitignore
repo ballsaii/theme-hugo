@@ -1,3 +1,6 @@
 node_modules
 exampleSite/themes
 yarn.lock
+package-lock.json
+package.json
+assets/
