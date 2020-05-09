@@ -1,9 +1,11 @@
-  <section>
-    {{$url := .Permalink}}
+
+{{$url := .Permalink}}
+{{$domainURL := .Site.Params.hostName}}
+<section>
     <h4>{{ i18n "share" }}</h4>
     <nav class="nav sharing-icons">
       <div class="fb-like" data-href="{{ $url }}" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
+      <div class="fb-comments" data-href="{{ $domainURL }}" data-width=""></div>
     </nav>
-      <div class="fb-comments" data-href="{{ $url }}" data-numposts="5" data-width=""></div>
     </section>
 {{- /* vim: set ts=2 sw=2 et: */}}
