@@ -1,9 +1,8 @@
   <section>
     <h4>{{ i18n "share" }}</h4>
     <nav class="nav sharing-icons">
-      <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fbbeawblog.onrender.com&width=450&layout=standard&action=like&size=large&share=true&height=35&appId=237349757517440" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5" data-width=""></div>
+      <div class="fb-like" data-href="{{ "/" | absURL }}" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
     </nav>
-    <div class="fb-comments" data-href="https://bbeawblog.onrender.com/" data-numposts="5" data-width=""></div>
+      <div class="fb-comments" data-href="{{ "/" | absURL }}" data-numposts="5" data-width=""></div>
     </section>
-
 {{- /* vim: set ts=2 sw=2 et: */}}
