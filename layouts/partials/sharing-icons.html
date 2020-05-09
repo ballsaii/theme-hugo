@@ -1,8 +1,9 @@
   <section>
+    {{$url := .Permalink}}
     <h4>{{ i18n "share" }}</h4>
     <nav class="nav sharing-icons">
-      <div class="fb-like" data-href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | absURL}}" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
+      <div class="fb-like" data-href="{{ $url }}" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
     </nav>
-      <div class="fb-comments" data-href="{{.Permalink | absURL }}" data-numposts="5" data-width=""></div>
+      <div class="fb-comments" data-href="{{ $url }}" data-numposts="5" data-width=""></div>
     </section>
 {{- /* vim: set ts=2 sw=2 et: */}}
