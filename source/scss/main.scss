@@ -8,10 +8,13 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Kanit|Prompt:300|Sarabun&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap');
-//-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+// -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 $fontbasic: "Segoe UI","Helvetica Neue","Noto Sans",Arial,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 // add font thai
 // 'Kanit', Prompt', 'Sarabun' , sans-serif;
+
 @media (min-width: 48em) {
   html {
     font-size: 18px;
@@ -145,8 +148,8 @@ h6, .h6 {
 }
 
 .list-unstyled{
-  padding-left: 1.5rem;
-  list-style: none;
+  list-style: inherit;
+  padding-left: 1rem;
 }
 
 .sidebar-module-inset {
@@ -231,4 +234,8 @@ article div.highlight {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+code{
+  font-family: "Inconsolata",serif,;
 }
